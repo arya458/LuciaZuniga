@@ -60,10 +60,43 @@
         .animate-pulse-slow {
             animation: pulse-slow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
+
+        /* --- Loading Overlay Styles --- */
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(17, 24, 39, 0.95); /* Semi-transparent dark background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Ensure it's on top of everything */
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+
+        #loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #fff; /* Spinner color */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body class="transition-colors duration-500">
 
+<div id="loading-overlay">
+    <div id="loading-spinner"></div>
+</div>
 <nav class="fixed top-0 left-0 right-0 z-50 bg-card bg-opacity-80 backdrop-blur-lg p-4 shadow-lg transition-colors duration-500">
     <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
         <a href="#" class="text-2xl font-bold text-primary-color hover:text-accent-color transition-colors duration-300" id="site-title">Lucia Zuniga.</a>
@@ -198,6 +231,23 @@
 </footer>
 
 <script>
+    // --- Loading Overlay Script ---
+    const loadingOverlay = document.getElementById('loading-overlay');
+    function hideLoadingOverlay() {
+        loadingOverlay.style.opacity = '0';
+        setTimeout(() => {
+            loadingOverlay.style.visibility = 'hidden';
+        }, 500); // Wait for the opacity transition to finish
+    }
+
+    // Hide the loader once the page's DOM is fully loaded.
+    // This is a good practice to ensure the page is interactive.
+    document.addEventListener('DOMContentLoaded', hideLoadingOverlay);
+
+    // As a fallback, hide the loader once all assets (like images) are loaded.
+    window.onload = hideLoadingOverlay;
+
+    // --- Original Scripts Below ---
     const themeToggle = document.getElementById('theme-toggle');
     const permuteToggle = document.getElementById('permute-toggle');
     const htmlElement = document.documentElement;
