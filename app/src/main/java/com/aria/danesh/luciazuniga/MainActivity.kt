@@ -1,6 +1,7 @@
 package com.aria.danesh.luciazuniga
 
 import android.os.Bundle
+import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.ComponentActivity
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     // Call the WebViewScreen Composable here
                     WebViewScreen(
-                        url = "https://www.google.com", // Replace with your desired URL
+                        url = "https://arya458.github.io/LuciaZuniga/", // Replace with your desired URL
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -69,6 +70,6 @@ fun WebViewPreview() {
     LuciaZunigaTheme {
         // You cannot preview a WebView directly, so this will show an empty container.
         // It's still useful for checking your layout structure.
-        WebViewScreen(url = "about:blank")
+        WebViewScreen(url = "https://arya458.github.io/LuciaZuniga/")
     }
 }
