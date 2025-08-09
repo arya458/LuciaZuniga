@@ -68,9 +68,12 @@
     <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
         <a href="#" class="text-2xl font-bold text-primary-color hover:text-accent-color transition-colors duration-300" id="site-title">Permutations.</a>
         <div class="flex items-center space-x-4 md:space-x-6">
-            <a href="#projects" class="text-sm font-medium hover:text-primary-color transition-colors duration-300">Projects</a>
-            <a href="#about" class="text-sm font-medium hover:text-primary-color transition-colors duration-300">About</a>
-            <a href="#contact" class="text-sm font-medium hover:text-primary-color transition-colors duration-300">Contact</a>
+            <div id="nav-links" class="hidden md:flex items-center space-x-4 md:space-x-6">
+                <a href="#projects" class="text-sm font-medium hover:text-primary-color transition-colors duration-300">Projects</a>
+                <a href="#about" class="text-sm font-medium hover:text-primary-color transition-colors duration-300">About</a>
+                <a href="#contact" class="text-sm font-medium hover:text-primary-color transition-colors duration-300">Contact</a>
+            </div>
+
             <button id="permute-toggle" class="p-2 rounded-full bg-card hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-color transition-all duration-300">
                 <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -90,97 +93,97 @@
 
 <main class="container mx-auto mt-24">
 
-    <header class="relative overflow-hidden rounded-3xl bg-primary py-24 md:py-48 mb-24 mx-4 md:mx-8 shadow-2xl transition-colors duration-500">
+    <header class="relative overflow-hidden rounded-3xl bg-primary py-16 md:py-48 mb-16 md:mb-24 mx-4 md:mx-8 shadow-2xl transition-colors duration-500">
         <div class="absolute inset-0 bg-accent-color/20 animate-pulse-slow opacity-20"></div>
         <div class="relative z-10 text-center px-4 md:px-8">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
+            <h1 class="text-4xl md:text-7xl font-extrabold text-white leading-tight mb-4">
                 Permutations.
             </h1>
-            <p class="text-lg md:text-2xl text-gray-200 max-w-2xl mx-auto mb-8">
+            <p class="text-base md:text-2xl text-gray-200 max-w-2xl mx-auto mb-6 md:mb-8">
                 A graphic designer's portfolio. Exploring the infinite possibilities of visual communication, one project at a time.
             </p>
-            <a href="#projects" class="inline-block px-8 py-4 bg-accent-color text-white font-bold rounded-full shadow-lg hover:bg-primary transform hover:scale-105 transition-all duration-300 ease-in-out">
+            <a href="#projects" class="inline-block px-6 py-3 md:px-8 md:py-4 bg-accent-color text-white font-bold rounded-full shadow-lg hover:bg-primary transform hover:scale-105 transition-all duration-300 ease-in-out">
                 View My Work
             </a>
         </div>
     </header>
 
-    <section id="projects" class="py-16 mx-4 md:mx-8">
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-main-color">Recent Projects</h2>
-        <div id="projects-grid" class="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <section id="projects" class="py-12 md:py-16 mx-4 md:mx-8">
+        <h2 class="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 text-main-color">Recent Projects</h2>
+        <div id="projects-grid" class="grid gap-8 md:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div class="bg-card rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                 <img src="https://picsum.photos/seed/project1/800/600" onerror="this.onerror=null;this.src='https://placehold.co/800x600/1e293b/d1d5db?text=Project+1';" alt="Placeholder project image" class="w-full h-64 object-cover">
                 <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-main-color">Corporate Rebrand</h3>
-                    <p class="text-secondary">A complete visual identity overhaul for a tech startup, focusing on modern typography and a vibrant color palette.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-main-color">Corporate Rebrand</h3>
+                    <p class="text-sm md:text-base text-secondary">A complete visual identity overhaul for a tech startup, focusing on modern typography and a vibrant color palette.</p>
                 </div>
             </div>
             <div class="bg-card rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                 <img src="https://picsum.photos/seed/project2/800/600" onerror="this.onerror=null;this.src='https://placehold.co/800x600/1e293b/d1d5db?text=Project+2';" alt="Placeholder project image" class="w-full h-64 object-cover">
                 <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-main-color">Editorial Layout</h3>
-                    <p class="text-secondary">Design and layout for a quarterly magazine, using custom illustrations and dynamic grid systems to guide the reader.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-main-color">Editorial Layout</h3>
+                    <p class="text-sm md:text-base text-secondary">Design and layout for a quarterly magazine, using custom illustrations and dynamic grid systems to guide the reader.</p>
                 </div>
             </div>
             <div class="bg-card rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                 <img src="https://picsum.photos/seed/project3/800/600" onerror="this.onerror=null;this.src='https://placehold.co/800x600/1e293b/d1d5db?text=Project+3';" alt="Placeholder project image" class="w-full h-64 object-cover">
                 <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-main-color">Web UI/UX</h3>
-                    <p class="text-secondary">Creation of a user-centric interface for a mobile application, focusing on accessibility and seamless user flow.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-main-color">Web UI/UX</h3>
+                    <p class="text-sm md:text-base text-secondary">Creation of a user-centric interface for a mobile application, focusing on accessibility and seamless user flow.</p>
                 </div>
             </div>
             <div class="bg-card rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                 <img src="https://picsum.photos/seed/project4/800/600" onerror="this.onerror=null;this.src='https://placehold.co/800x600/1e293b/d1d5db?text=Project+4';" alt="Placeholder project image" class="w-full h-64 object-cover">
                 <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-main-color">Product Packaging</h3>
-                    <p class="text-secondary">Innovative and sustainable packaging design for a new line of wellness products, with eco-friendly materials.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-main-color">Product Packaging</h3>
+                    <p class="text-sm md:text-base text-secondary">Innovative and sustainable packaging design for a new line of wellness products, with eco-friendly materials.</p>
                 </div>
             </div>
             <div class="bg-card rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                 <img src="https://picsum.photos/seed/project5/800/600" onerror="this.onerror=null;this.src='https://placehold.co/800x600/1e293b/d1d5db?text=Project+5';" alt="Placeholder project image" class="w-full h-64 object-cover">
                 <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-main-color">Event Branding</h3>
-                    <p class="text-secondary">Complete branding for a design conference, including logos, social media assets, and on-site signage.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-main-color">Event Branding</h3>
+                    <p class="text-sm md:text-base text-secondary">Complete branding for a design conference, including logos, social media assets, and on-site signage.</p>
                 </div>
             </div>
             <div class="bg-card rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                 <img src="https://picsum.photos/seed/project6/800/600" onerror="this.onerror=null;this.src='https://placehold.co/800x600/1e293b/d1d5db?text=Project+6';" alt="Placeholder project image" class="w-full h-64 object-cover">
                 <div class="p-6">
-                    <h3 class="text-2xl font-semibold mb-2 text-main-color">Social Media Campaign</h3>
-                    <p class="text-secondary">A visually-driven campaign for an e-commerce brand, utilizing animated graphics and custom illustrations.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-main-color">Social Media Campaign</h3>
+                    <p class="text-sm md:text-base text-secondary">A visually-driven campaign for an e-commerce brand, utilizing animated graphics and custom illustrations.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-16 mx-4 md:mx-8">
-        <div class="bg-card rounded-3xl p-8 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center lg:items-start gap-12 transition-colors duration-500">
-            <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg">
+    <section id="about" class="py-12 md:py-16 mx-4 md:mx-8">
+        <div class="bg-card rounded-3xl p-8 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center lg:items-start gap-8 md:gap-12 transition-colors duration-500 text-center lg:text-left">
+            <div class="w-32 h-32 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg">
                 <img src="https://picsum.photos/seed/profile/256/256" onerror="this.onerror=null;this.src='https://placehold.co/256x256/374151/9ca3af?text=Your+Photo';" alt="Placeholder profile picture" class="w-full h-full object-cover">
             </div>
-            <div class="text-center lg:text-left text-main-color">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
-                <p class="text-lg text-secondary mb-6 max-w-3xl">
+            <div class="text-main-color">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
+                <p class="text-base md:text-lg text-secondary mb-6 max-w-3xl">
                     I am a graphic designer obsessed with the process of permutation—rearranging, transforming, and evolving visual elements to create unique and impactful experiences. My work is a blend of clean design principles and bold experimentation, always striving to find the perfect balance between form and function.
                 </p>
-                <p class="text-lg text-secondary max-w-3xl">
+                <p class="text-base md:text-lg text-secondary max-w-3xl">
                     With expertise in branding, editorial design, and digital interfaces, I believe that great design tells a story and sparks a conversation. Let's create something memorable together.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-16 mx-4 md:mx-8">
+    <section id="contact" class="py-12 md:py-16 mx-4 md:mx-8">
         <div class="bg-card rounded-3xl p-8 md:p-16 shadow-2xl text-center transition-colors duration-500">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-main-color">Let's Connect</h2>
-            <p class="text-lg text-secondary mb-8 max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 text-main-color">Let's Connect</h2>
+            <p class="text-base md:text-lg text-secondary mb-6 md:mb-8 max-w-2xl mx-auto">
                 Whether you have a project in mind or just want to say hello, I'd love to hear from you.
             </p>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-                <a href="mailto:your.email@example.com" class="inline-block px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-accent-color transform hover:scale-105 transition-all duration-300 ease-in-out">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
+                <a href="mailto:your.email@example.com" class="w-full md:w-auto inline-block px-6 py-3 md:px-8 md:py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-accent-color transform hover:scale-105 transition-all duration-300 ease-in-out">
                     Send me an Email
                 </a>
-                <a href="#" class="inline-block px-8 py-4 bg-gray-700 text-gray-200 font-bold rounded-full shadow-lg hover:bg-gray-600 transform hover:scale-105 transition-all duration-300 ease-in-out">
+                <a href="#" class="w-full md:w-auto inline-block px-6 py-3 md:px-8 md:py-4 bg-gray-700 text-gray-200 font-bold rounded-full shadow-lg hover:bg-gray-600 transform hover:scale-105 transition-all duration-300 ease-in-out">
                     Check my LinkedIn
                 </a>
             </div>
@@ -188,7 +191,7 @@
     </section>
 </main>
 
-<footer class="bg-card py-8 mt-16 mx-4 md:mx-8 rounded-t-3xl transition-colors duration-500">
+<footer class="bg-card py-6 mt-12 md:mt-16 mx-4 md:mx-8 rounded-t-3xl transition-colors duration-500">
     <div class="container mx-auto px-4 md:px-8 text-center text-secondary text-sm">
         <p>&copy; 2024 Permutations. All rights reserved.</p>
         <p class="mt-1">made with ❤️ by Aria</p>
@@ -203,6 +206,7 @@
     const moonIcon = document.getElementById('moon-icon');
     const projectsGrid = document.getElementById('projects-grid');
     const siteTitle = document.getElementById('site-title');
+    const navLinks = document.getElementById('nav-links'); // Get the new nav links container
 
     // Palettes for light and dark themes
     const lightPalettes = [
