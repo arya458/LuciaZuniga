@@ -8,12 +8,12 @@
   "description": "The professional portfolio of graphic designer Lucia Zuniga.",
   "icons": [
     {
-      "src": "/face192.png",
+      "src": "https://arya458.github.io/LuciaZuniga/face192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/face512.png",
+      "src": "https://arya458.github.io/LuciaZuniga/face512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
