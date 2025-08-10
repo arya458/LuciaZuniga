@@ -1,7 +1,10 @@
 const CACHE_NAME = 'lucia-portfolio-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
+  'https://arya458.github.io/LuciaZuniga/',
+  'https://arya458.github.io/LuciaZuniga/index.html',
+  'https://arya458.github.io/LuciaZuniga/face192.png',
+  'https://arya458.github.io/LuciaZuniga/face512.png',
+  'https://arya458.github.io/LuciaZuniga/manifest.json',
   // For now, only cache the main page.
   // Add more files as you create them.
 ];
